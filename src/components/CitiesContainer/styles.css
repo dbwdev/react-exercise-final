@@ -1,0 +1,49 @@
+.cities-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 1rem;
+  grid-gap: 2rem;
+}
+
+.city-row {
+  display: grid;
+  grid-template-columns: 3fr repeat(2, 1fr);
+  cursor: pointer;
+  border-bottom: none;
+}
+
+.cell {
+  margin: 10px 0;
+}
+
+.city-row:nth-of-type(2n) {
+  background: gainsboro;
+}
+
+.header span {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.city-row:hover {
+  color: indianred;
+}
+
+.city-view {
+  display: flex;
+  flex-direction: column;
+  background: gainsboro;
+  padding: 1rem;
+  border-radius: 7px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+  max-height: 300px;
+}
+
+.city-detail {
+  margin-bottom: 1rem;
+}
+
+.selected-city--name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
